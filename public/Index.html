@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Group Video Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="namePrompt">
+    <h2>Enter Your Name</h2>
+    <input id="firstName" placeholder="First Name">
+    <input id="lastName" placeholder="Last Name">
+    <button onclick="joinChat()">Join</button>
+  </div>
+
+  <div id="main" hidden>
+    <div id="video-grid"></div>
+    <div id="chat">
+      <ul id="messages"></ul>
+      <form id="chat-form">
+        <input id="chat-input" autocomplete="off" placeholder="Type a message..." />
+        <button>Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer@9.11.1/simplepeer.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
