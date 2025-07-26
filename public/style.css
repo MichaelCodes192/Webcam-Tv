@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#chat {
+  margin-top: 10px;
+}
+
+#messages {
+  border: 1px solid #ccc;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+  margin: 3px;
+}
+
+#video-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+video {
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
